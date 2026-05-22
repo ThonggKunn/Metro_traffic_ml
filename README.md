@@ -10,7 +10,7 @@
 
 **End-to-end machine learning pipeline for predicting hourly interstate traffic volume using weather, time, and calendar features.**
 
-[📓 Open in Colab](#) · [📊 Dataset](https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume) · [📋 Report](#results)
+[📓 Open in Colab](https://colab.research.google.com/drive/1Jb1qTNSRvXDGSdiVgGJK3EQT2JflUQm_#scrollTo=m9M7BrXiHgy1) · [📊 Dataset](https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume) 
 
 </div>
 
