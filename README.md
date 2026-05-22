@@ -246,51 +246,51 @@ Raw Data (Google Drive / UCI)
 > Place your exported plot images in a `/plots` folder and reference them below.
 
 ### Target Variable Distribution
-![Target Distribution](plots/fig_target_dist.png)
+![Target Distribution](plot/fig_target_dist.png)
 *Bimodal distribution revealing two distinct traffic regimes: near-zero (nighttime) and high-volume (daytime).*
 
 ### Time-Series Analysis
-![Time Analysis](plots/fig_time_analysis.png)
+![Time Analysis](plot/fig_time_analysis.png)
 *Clear peak-hour patterns (7–9 AM, 3–6 PM on weekdays). Weekends show ~30% lower average volume.*
 
 ### Correlation Matrix
-![Correlation Matrix](plots/fig_correlation.png)
+![Correlation Matrix](plot/fig_correlation.png)
 *`hour` and `weekday` show the strongest correlation with traffic volume. Weather features have weaker but measurable influence.*
 
 ### Baseline Model Comparison
-![Baseline Comparison](plots/fig_baseline_comparison.png)
+![Baseline Comparison](plot/fig_baseline_comparison.png)
 *Tree-based ensemble methods (LightGBM, XGBoost, Extra Trees) clearly outperform linear models by a significant margin.*
 
 ### 5-Fold CV vs Test Comparison
-![CV vs Test](plots/fig_cv_test.png)
+![CV vs Test](plot/fig_cv_test.png)
 *Tight CV bands confirm stable generalization — minimal gap between cross-validation and held-out test performance.*
 
 ### Train / CV / Test Full Comparison
-![Train CV Test](plots/fig_train_cv_test.png)
+![Train CV Test](plot/fig_train_cv_test.png)
 *Regularized model shows consistent performance across all three evaluation stages with no signs of overfitting.*
 
 ### Prediction Error Analysis
-![Prediction Error](plots/fig_prediction_error.png)
+![Prediction Error](plot/fig_prediction_error.png)
 *Predicted vs actual scatter hugs the diagonal tightly. Relative error concentrated below 20% for the majority of samples.*
 
 ### Monte Carlo Stability
-![Monte Carlo](plots/fig_monte_carlo.png)
+![Monte Carlo](plot/fig_monte_carlo.png)
 *100 random train/test splits produce narrow metric distributions, confirming model robustness and result reliability.*
 
 ### SHAP Feature Importance
-![SHAP Bar](plots/fig_shap_bar.png)
+![SHAP Bar](plot/fig_shap_bar.png)
 *`hour`, `weekday`, and `month` dominate predictions. Temperature (`temp`) ranks highest among weather features.*
 
 ### SHAP Beeswarm Plot
-![SHAP Beeswarm](plots/fig_shap_beeswarm.png)
+![SHAP Beeswarm](plot/fig_shap_beeswarm.png)
 *Fine-grained view of feature impact direction. Rush-hour values of `hour` push predictions strongly positive.*
 
 ### Partial Dependence Plots
-![PDP](plots/fig_pdp.png)
+![PDP](plot/fig_pdp.png)
 *Non-linear relationships between top features and traffic volume — PDP reveals the "two-hump" peak-hour pattern clearly.*
 
 ### Before vs After Tuning
-![Before After](plots/fig_before_after.png)
+![Before After](plot/fig_before_after.png)
 *All four metrics improve after hyperparameter tuning, with RMSE showing the most pronounced gain.*
 
 ---
